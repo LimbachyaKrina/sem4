@@ -1,0 +1,93 @@
+Express Js:
+- is a web framework for node.Js
+- it is a fast, robust, asynchronous
+- used to design single page, multi-page and hybrid web application
+- allows to setup middleware
+- single threaded
+- MVC like structure [Model View Controller]
+- makes routing easy
+- dynamically render HTML pages
+- layer built on top of Node.Js
+
+ # To create package.json file:
+ npm init
+- for dependences and all , all the info of modules (their version and all)
+- log of everything is maintained here. Works like a log file
+
+#
+var expr = require('express')
+var app = expr()
+app.get('pagename', callback)
+res.write('String')
+res.send("String") / res.end() or res.send()
+res.status("statuscode")
+res.json(jsonobject)
+res.set('Content-type':'text/HTML')
+
+# Route parameters:
+req.parameters
+
+# HTTP Methods (get method)
+- express :
+    public :
+        second.HTML
+        index.css
+    src:
+        get_method.js
+
+second.HTML
+
+form :
+    firstname
+    lastname
+    gender
+    hobby
+    city
+display all values from second.html to web server
+
+# middleware
+- like a function that works in between and gives some kind of output
+- can process multiple  times request object before server response that request
+- use to add logging, authentication, functionality
+- also use for cancel the request-response cycle
+- middleware will work on same page because it is used for the same request
+
+
+# Cookies 
+- to add cookie : res.cookie('cookiename','value')
+- to display cookie : req.Cookies
+- to delete cookie : res.clearCookie('cookiename')
+- to assigne age : res.cookie(name,'value',{maxAge : 3000}) | {expires : new Date(Date.now() + 1000)}
+
+cookies are delete in 2 ways : after particular time period or manually
+
+
+
+# Ch 5 :
+- File Upload 
+- multer (options)
+    options : storage
+              file Filter
+              limits
+- .single("filename")
+- .array("fieldname", [maxCount])
+
+- file information :
+    fieldname
+    originalname
+    encoding
+    mimetype
+    size
+    destination
+
+* Templates - view engine (pug)
+- npm install pug 
+(backend data you want to print in frontend side/ server side)
+- like a html
+- you have to render pug file
+
+
+# RESTful API 
+- Application Programming Interface
+- RESTful API works with HTTP
+- data is in json format

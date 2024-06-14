@@ -1,0 +1,7 @@
+const expr = require("express")
+const app = expr()
+const m = require("./movies")
+// const m1 = require("./manager")
+app.use("/",m)
+// app.use("/manager",m1)
+app.listen(3000)

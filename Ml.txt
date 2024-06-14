@@ -1,0 +1,70 @@
+- there are 4 types of ML : 
+= supervised learning :  has labelled dataset 
+eg. spam emails, cashify, cardekho.com
+= unsupervised  learning : has unlabelled dataset
+eg. customer dataset
+= semi-supervised learning : more unlabelled and less labelled dataset
+eg. Netflix
+= reinforced learning : game learning 
+eg. self driving cars in their initial stage
+- if there is some of the output present in the dataset itself it is known as labelled dataset
+
+Batch learning : it is trained in bulk model eg. ChatGPT
+Online Learning : it is trained daily (day to day)  eg. Bard
+
+supervised learning : regression and classification
+regression - y = mx + c 
+where m is slope and c is intercept 
+used mostly where there is numerical data
+
+classification - output is qualitative data
+
+
+# NOTE : The difference between the predicted value and the actual value is known as residual error 
+# We are using Mean square error : sum(ypre^2 - yact^2)/ n
+
+
+- To optimze the model, there are 2 parts : training data and testing data
+
+
+# Feature Engineering : 
+- Feature Construction & Feature Transformation : 
+
+
+
+# Machine Learning:
+- Problem defination
+- Data Collection
+- Data Preperation (Data cleaning)
+- Exploratory Data Analysis (EDA) [Describe, correlation, data visualisation{regression plot, bar plot}, data is splitted in 2 parts{training - 80%, testing - 20%}]
+- Model Selection 
+- Model training
+- Model Evalution
+- Model Tuning  x
+- Model Deployment 
+- Model Monitoring and Development
+- Communication & Reporting (how accurately my model is working)
+
+# Ch : 6 Machine Learning (classification):
+- k-NL : k- Nearest Neighbors classifier
+- calculative data then regression
+- quantitative data , yes or no - classification
+- euclidean distance the distance between the k and it's neighbors
+- in regression it gives average value but here it will give majority value to known
+
+
+= Confusion Matrix
+- basis for evaluation for any classification method
+- spam(P) [these are the values predicted by the model] or not spam(N)
+- Actual values {spam or not spam} 
+- then the prediction will be : TP, FP, FN, TN
+- Type-1 Error = FN
+- Type-2 Error = FP
+- Accuracy = TP + TN / (Total no. of emails)
+- Error Rate = 1 - Accuracy
+- Precision = TP / TP + FP 
+- Sensitivity (Recall) = TP / TP + FN
+- Specificity = TN / TN + FP
+
+# Decision Tree classifier
+
